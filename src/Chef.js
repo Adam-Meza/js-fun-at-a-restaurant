@@ -14,12 +14,14 @@ class Chef {
   checkForFood(item,){
     let x = item.type
       for (let i = 0; i< this.restaurant.menus[x].length; i++){
-      if (this.restaurant.menus[x][i] === (item)){
+        if (this.restaurant.menus[x][i] === (item)) {
         return `Yes, we're serving ${item.name} today!`
-      }
-    } 
-    return `Sorry, we aren't serving ${item.name} today.`
+      } else {
+        return `Sorry, we aren't serving ${item.name} today.`
+      } 
+    }
   } 
+
 
 }
 

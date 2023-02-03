@@ -1,6 +1,7 @@
 function takeOrder(order, deliveryOrders) {
-  if (deliveryOrders.length < 3){
-    deliveryOrders.push(order)}
+  if (deliveryOrders.length < 3) {
+    deliveryOrders.push(order)
+  }
   return deliveryOrders
 }
 
@@ -21,13 +22,12 @@ function listItems(order) {
   return list.slice(0,(list.length - 2))
 }
 
-function searchOrder(order, searchItem){
-  for (i = 0; i< order.length; i++){
-    if (order[i].item === searchItem){
+function searchOrder(order, searchItem) {
+  for (i = 0; i< order.length; i++) {
+    if (order[i].item === searchItem) {
       return true
     } 
   }
-  
   return false
 }
 
