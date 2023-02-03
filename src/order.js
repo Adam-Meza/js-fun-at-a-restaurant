@@ -1,6 +1,6 @@
 function takeOrder(order, deliveryOrders) {
   if (deliveryOrders.length < 3){
-  deliveryOrders.push(order)}
+    deliveryOrders.push(order)}
   return deliveryOrders
 }
 
@@ -18,7 +18,7 @@ function listItems(order) {
   for (i = 0; i < order.length; i++) {
     list = list + `${order[i].item}` + ", "
   }
-return list.slice(0,(list.length - 2))
+  return list.slice(0,(list.length - 2))
 }
 
 function searchOrder(order, searchItem){
@@ -27,6 +27,7 @@ function searchOrder(order, searchItem){
       return true
     } 
   }
+  
   return false
 }
 
